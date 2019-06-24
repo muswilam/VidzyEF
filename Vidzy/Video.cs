@@ -14,5 +14,7 @@ namespace Vidzy
 
         public DateTime? ReleaseDate { get; set; }
 
+        public Classification Classification { get; set; }
+
     }
 }
