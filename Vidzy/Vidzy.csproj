@@ -59,6 +59,10 @@
     <Compile Include="Migrations\201906241451182_PopulateRefrenceDataInGenresTable.Designer.cs">
       <DependentUpon>201906241451182_PopulateRefrenceDataInGenresTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906241512554_DeleteGenresAssociationColumnFromVideosTable.cs" />
+    <Compile Include="Migrations\201906241512554_DeleteGenresAssociationColumnFromVideosTable.Designer.cs">
+      <DependentUpon>201906241512554_DeleteGenresAssociationColumnFromVideosTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,6 +79,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906241451182_PopulateRefrenceDataInGenresTable.resx">
       <DependentUpon>201906241451182_PopulateRefrenceDataInGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906241512554_DeleteGenresAssociationColumnFromVideosTable.resx">
+      <DependentUpon>201906241512554_DeleteGenresAssociationColumnFromVideosTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -14,7 +14,5 @@ namespace Vidzy
 
         public DateTime? ReleaseDate { get; set; }
 
-        // nav prop
-        public ICollection<Genre> Genres { get; set; }
     }
 }
