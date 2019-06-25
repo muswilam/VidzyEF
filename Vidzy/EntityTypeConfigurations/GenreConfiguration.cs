@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vidzy.EntityConfigurations
+namespace Vidzy.EntityTypeConfigurations
 {
-    public class GenreConfigurations : EntityTypeConfiguration<Genre>
+    public class GenreConfiguration : EntityTypeConfiguration<Genre>
     {
-        public GenreConfigurations()
+        public GenreConfiguration()
         {
             Property(g => g.Name)
             .IsRequired()

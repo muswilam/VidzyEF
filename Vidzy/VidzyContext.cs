@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
-using Vidzy.EntityConfigurations;
+using Vidzy.EntityTypeConfigurations;
 
 namespace Vidzy
 {
@@ -15,8 +15,9 @@ namespace Vidzy
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Configurations.Add(new VideoConfigurations());
-            modelBuilder.Configurations.Add(new GenreConfigurations());
+            modelBuilder.Configurations.Add(new VideoConfiguration());
+            modelBuilder.Configurations.Add(new GenreConfiguration());
+            modelBuilder.Configurations.Add(new TagConfiguration());
         }
     }
 }
