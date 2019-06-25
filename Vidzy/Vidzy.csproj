@@ -50,6 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntityConfigurations\GenreConfigurations.cs" />
+    <Compile Include="EntityConfigurations\VideoConfigurations.cs" />
     <Compile Include="Genre.cs" />
     <Compile Include="Migrations\201906241446458_InitialModel.cs" />
     <Compile Include="Migrations\201906241446458_InitialModel.Designer.cs">
@@ -66,6 +68,10 @@
     <Compile Include="Migrations\201906241525266_AddClassificationColumnInVideosTable.cs" />
     <Compile Include="Migrations\201906241525266_AddClassificationColumnInVideosTable.Designer.cs">
       <DependentUpon>201906241525266_AddClassificationColumnInVideosTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906251512336_OverrideConventionsByFluentAPIConfigurations.cs" />
+    <Compile Include="Migrations\201906251512336_OverrideConventionsByFluentAPIConfigurations.Designer.cs">
+      <DependentUpon>201906251512336_OverrideConventionsByFluentAPIConfigurations.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -89,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906241525266_AddClassificationColumnInVideosTable.resx">
       <DependentUpon>201906241525266_AddClassificationColumnInVideosTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906251512336_OverrideConventionsByFluentAPIConfigurations.resx">
+      <DependentUpon>201906251512336_OverrideConventionsByFluentAPIConfigurations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
