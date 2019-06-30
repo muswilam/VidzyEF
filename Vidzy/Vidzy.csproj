@@ -78,6 +78,10 @@
     <Compile Include="Migrations\201906251550135_AddTagsTableAndOverridingConventions.Designer.cs">
       <DependentUpon>201906251550135_AddTagsTableAndOverridingConventions.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906301333379_enableCascadeDeleteForForeignKeyGenreId.cs" />
+    <Compile Include="Migrations\201906301333379_enableCascadeDeleteForForeignKeyGenreId.Designer.cs">
+      <DependentUpon>201906301333379_enableCascadeDeleteForForeignKeyGenreId.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -107,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906251550135_AddTagsTableAndOverridingConventions.resx">
       <DependentUpon>201906251550135_AddTagsTableAndOverridingConventions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906301333379_enableCascadeDeleteForForeignKeyGenreId.resx">
+      <DependentUpon>201906301333379_enableCascadeDeleteForForeignKeyGenreId.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

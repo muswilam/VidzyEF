@@ -18,8 +18,7 @@ namespace Vidzy.EntityTypeConfigurations
             //relationships
             HasRequired(v => v.Genre)
             .WithMany(g => g.Videos)
-            .HasForeignKey(v => v.GenreId)
-            .WillCascadeOnDelete(false);
+            .HasForeignKey(v => v.GenreId);
 
             HasMany(v => v.Tags)
                 .WithMany(t => t.Videos)
